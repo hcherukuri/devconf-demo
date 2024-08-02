@@ -1,0 +1,5 @@
+---
+vm:
+  - name: wildfly-demo-2
+  - name: wildfly-demo-3
+namespace: devconf-demo

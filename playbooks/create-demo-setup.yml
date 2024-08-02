@@ -5,15 +5,16 @@
   vars:
     repo_url: "https://github.com/ansible-middleware/wildfly-cluster-demo.git"
     branch: main
+    hosts_group_name: demo
+    
   tasks:
     - name: Git checkout
       ansible.builtin.git:
         repo: "{{ repo_url }}"
         dest: "{{ playbook_dir }}/wildfly-cluster-demo"
         version: "{{ branch }}"
-        single_branch: yes
         clone: yes
-        update: yes
+        force: yes
 
     - name: Create demo resources on opnestack and kubevirt.
       ansible.builtin.import_playbook: create-resources.yml
@@ -22,5 +23,5 @@
     - pause:
         minutes: 1
 
-- name: Run wildfly-cluster-demo
-  import_playbook: wildfly-cluster-demo/playbooks.yml
+  - name: Run wildfly-cluster-demo
+    include_tasks: wildfly-cluster-demo/playbook.yml

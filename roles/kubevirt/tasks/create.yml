@@ -1,0 +1,55 @@
+---
+- name: Create a namespace
+  kubernetes.core.k8s:
+    name: "{{ namespace }}"
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Create VM
+  kubevirt.core.kubevirt_vm:
+    state: present
+    name: demo
+    namespace: "{{ namespace }}"
+    labels:
+      app: demo
+    instancetype:
+      kind: VirtualMachineClusterInstancetype
+      name: u1.medium
+    running: true
+    preference:
+      name: rhel.8
+    data_volume_templates:
+      - metadata:
+          name: rhel-8-indigo-warbler-42-volume
+    spec:
+      sourceRef:
+        kind: DataSource
+        name: rhel8
+        namespace: openshift-virtualization-os-images
+      storage:
+        resources:
+          requests: {}
+    spec:
+      domain:
+        devices: {}
+      volumes:
+        - dataVolume:
+            name: rhel-8-indigo-warbler-42-volume
+          name: rootdisk
+        - cloudInitNoCloud:
+            userData: |
+              #cloud-config
+              chpasswd:
+                expire: false
+              password: 123qwe
+              user: cloud-user
+          name: demo
+      accessCredentials:
+        - sshPublicKey:
+            propagationMethod:
+              noCloud: {}
+            source:
+              secret:
+                secretName: demo
+    wait: yes

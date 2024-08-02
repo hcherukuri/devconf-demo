@@ -1,3 +1,5 @@
 ---
 collections:
   - name: openstack.cloud
+  - name: kubevirt.core
+  - name: middleware_automation.wildfly

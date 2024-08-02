@@ -2,3 +2,5 @@
 *.zip
 rhn-creds.yml
 ansible.cfg
+*.pem
+*.sh
