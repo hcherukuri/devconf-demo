@@ -4,3 +4,4 @@ rhn-creds.yml
 ansible.cfg
 *.pem
 *.sh
+devconf.pub

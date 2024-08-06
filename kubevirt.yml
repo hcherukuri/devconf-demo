@@ -1,0 +1,5 @@
+plugin: kubevirt.core.kubevirt
+namespaces:
+  - devconf-demo
+label_selector: app=demo
+create_groups: true

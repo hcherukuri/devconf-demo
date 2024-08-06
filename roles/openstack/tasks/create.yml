@@ -21,7 +21,7 @@
     network: "{{ network }}"
     meta:
       hostname: "{{ item.name }}"
-      group: demo
+      group: "{{ group }}"
     userdata: |
       #cloud-config
       debug: true

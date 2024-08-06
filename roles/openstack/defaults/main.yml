@@ -19,6 +19,7 @@ key_name: devconf
 security_groups: default
 default_password: 123qwe
 terminate_volumes: yes
+group: "label_app_demo"
 vm:
   - name: wildfly-demo-0
   - name: wildfly-demo-1

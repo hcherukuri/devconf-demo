@@ -8,3 +8,4 @@ cache: yes
 cache_plugin: ansible.builtin.jsonfile
 cache_timeout: 3600
 cache_connection: dynamic_inventory
+cache_prefix: os_

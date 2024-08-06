@@ -1,13 +1,5 @@
 ---
-- name: Delete VM
-  kubevirt.core.kubevirt_vm:
-    name: "{{ item.name }}"
-    namespace: "{{ namespace }}"
-    state: absent
-    wait: yes
-  loop" "{{ vm }}"
-
-- name: Delete namespace
+- name: Delete namespace and VM's inside it.
   kubernetes.core.k8s:
     name: "{{ namespace }}"
     api_version: v1
