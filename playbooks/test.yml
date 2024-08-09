@@ -1,8 +1,7 @@
 ---
 - name: Try this out
-  hosts: localhost
+  hosts: ocpv
   gather_facts: false
-  connection: local
   tasks:
     - name: RHEL version
       ansible.builtin.shell: cat /etc/redhat-release

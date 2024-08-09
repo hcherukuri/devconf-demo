@@ -1,0 +1,6 @@
+---
+- import_playbook: create-resources.yml
+
+- import_playbook: prerequisites.yml
+
+- import_playbook: eap.yml

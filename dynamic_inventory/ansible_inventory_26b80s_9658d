@@ -5,9 +5,9 @@
         "addresses": {
             "provider_net_cci_7": [
                 {
-                    "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:2c:30:bd",
+                    "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:8a:22:5e",
                     "OS-EXT-IPS:type": "fixed",
-                    "addr": "10.0.99.22",
+                    "addr": "10.0.98.3",
                     "version": 4
                 }
             ]
@@ -19,7 +19,7 @@
                 "bdm_id": null,
                 "delete_on_termination": true,
                 "device": null,
-                "id": "9685c235-6abe-436f-b97f-667054aa4d0a",
+                "id": "c70cc1df-1171-4def-85bd-3132088de10c",
                 "location": null,
                 "name": null,
                 "tag": null,
@@ -34,7 +34,7 @@
         },
         "compute_host": null,
         "config_drive": "",
-        "created_at": "2024-08-01T23:49:05Z",
+        "created_at": "2024-08-09T10:37:10Z",
         "description": null,
         "disk_config": "MANUAL",
         "fault": null,
@@ -59,11 +59,11 @@
         "flavor_id": null,
         "has_config_drive": "",
         "host": null,
-        "host_id": "afc32875243ddaa95ca27552c4d1ddc112b190d047aa4e951be42d33",
+        "host_id": "32153c47f7768b8a2bfb6bdd6c34b5976816437f0e8b413e98a7571e",
         "host_status": null,
         "hostname": null,
         "hypervisor_hostname": null,
-        "id": "3db580a7-fb28-470a-9430-4801e154f6c1",
+        "id": "164a0434-aaeb-46ec-bea0-a70b111921c3",
         "image": {
             "architecture": null,
             "checksum": null,
@@ -137,25 +137,25 @@
         "kernel_id": null,
         "key_name": "devconf",
         "launch_index": null,
-        "launched_at": "2024-08-01T23:50:16.000000",
+        "launched_at": "2024-08-09T10:38:01.000000",
         "links": [
             {
-                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/v2.1/servers/3db580a7-fb28-470a-9430-4801e154f6c1",
+                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/v2.1/servers/164a0434-aaeb-46ec-bea0-a70b111921c3",
                 "rel": "self"
             },
             {
-                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/servers/3db580a7-fb28-470a-9430-4801e154f6c1",
+                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/servers/164a0434-aaeb-46ec-bea0-a70b111921c3",
                 "rel": "bookmark"
             }
         ],
         "locked_reason": null,
         "max_count": null,
         "metadata": {
-            "group": "demo",
-            "hostname": "wildfly-demo-1"
+            "group": "label_app_demo",
+            "hostname": "eap-demo-2"
         },
         "min_count": null,
-        "name": "wildfly-demo-1",
+        "name": "eap-demo-2",
         "networks": null,
         "personality": null,
         "pinned_availability_zone": null,
@@ -177,7 +177,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2024-08-01T23:50:16Z",
+        "updated_at": "2024-08-09T10:38:01Z",
         "user_data": null,
         "user_id": "4a766fdd7382980917dd26484f47bb45038eb27a82f433b53f412d51c54a42bd",
         "vm_state": "active",
@@ -187,7 +187,7 @@
                 "bdm_id": null,
                 "delete_on_termination": true,
                 "device": null,
-                "id": "9685c235-6abe-436f-b97f-667054aa4d0a",
+                "id": "c70cc1df-1171-4def-85bd-3132088de10c",
                 "location": null,
                 "name": null,
                 "tag": null,
@@ -201,9 +201,9 @@
         "addresses": {
             "provider_net_cci_7": [
                 {
-                    "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:84:51:ec",
+                    "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cf:9d:3d",
                     "OS-EXT-IPS:type": "fixed",
-                    "addr": "10.0.96.119",
+                    "addr": "10.0.99.146",
                     "version": 4
                 }
             ]
@@ -215,7 +215,7 @@
                 "bdm_id": null,
                 "delete_on_termination": true,
                 "device": null,
-                "id": "a0688382-678d-46e2-a9a2-7e34e5ec9109",
+                "id": "966134d2-084b-484f-b47f-7bdf96a53539",
                 "location": null,
                 "name": null,
                 "tag": null,
@@ -230,7 +230,7 @@
         },
         "compute_host": null,
         "config_drive": "",
-        "created_at": "2024-08-01T23:47:05Z",
+        "created_at": "2024-08-09T10:35:20Z",
         "description": null,
         "disk_config": "MANUAL",
         "fault": null,
@@ -255,11 +255,11 @@
         "flavor_id": null,
         "has_config_drive": "",
         "host": null,
-        "host_id": "5b990c24ef6f25652c54efc4c697669631ae8418df66151b015abb1b",
+        "host_id": "32153c47f7768b8a2bfb6bdd6c34b5976816437f0e8b413e98a7571e",
         "host_status": null,
         "hostname": null,
         "hypervisor_hostname": null,
-        "id": "679186d1-5d6e-4525-980f-a9a2e5790a4c",
+        "id": "6df3d583-f58e-4480-aa63-3a4cc24db51b",
         "image": {
             "architecture": null,
             "checksum": null,
@@ -333,25 +333,25 @@
         "kernel_id": null,
         "key_name": "devconf",
         "launch_index": null,
-        "launched_at": "2024-08-01T23:48:08.000000",
+        "launched_at": "2024-08-09T10:36:12.000000",
         "links": [
             {
-                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/v2.1/servers/679186d1-5d6e-4525-980f-a9a2e5790a4c",
+                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/v2.1/servers/6df3d583-f58e-4480-aa63-3a4cc24db51b",
                 "rel": "self"
             },
             {
-                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/servers/679186d1-5d6e-4525-980f-a9a2e5790a4c",
+                "href": "https://rhos-d.infra.prod.upshift.rdu2.redhat.com:13774/servers/6df3d583-f58e-4480-aa63-3a4cc24db51b",
                 "rel": "bookmark"
             }
         ],
         "locked_reason": null,
         "max_count": null,
         "metadata": {
-            "group": "demo",
-            "hostname": "wildfly-demo-0"
+            "group": "label_app_demo",
+            "hostname": "eap-demo-1"
         },
         "min_count": null,
-        "name": "wildfly-demo-0",
+        "name": "eap-demo-1",
         "networks": null,
         "personality": null,
         "pinned_availability_zone": null,
@@ -373,7 +373,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2024-08-01T23:48:08Z",
+        "updated_at": "2024-08-09T10:36:12Z",
         "user_data": null,
         "user_id": "4a766fdd7382980917dd26484f47bb45038eb27a82f433b53f412d51c54a42bd",
         "vm_state": "active",
@@ -383,7 +383,7 @@
                 "bdm_id": null,
                 "delete_on_termination": true,
                 "device": null,
-                "id": "a0688382-678d-46e2-a9a2-7e34e5ec9109",
+                "id": "966134d2-084b-484f-b47f-7bdf96a53539",
                 "location": null,
                 "name": null,
                 "tag": null,
@@ -1330,7 +1330,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2023-11-26T10:42:37Z",
+        "updated_at": "2024-08-08T00:12:11Z",
         "user_data": null,
         "user_id": "0e6ca7c9f6fde5445a14807c925a22c13e8c01047b36353047198b1b4c74e282",
         "vm_state": "active",
@@ -1523,7 +1523,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2023-11-26T10:43:04Z",
+        "updated_at": "2024-08-08T00:12:12Z",
         "user_data": null,
         "user_id": "0e6ca7c9f6fde5445a14807c925a22c13e8c01047b36353047198b1b4c74e282",
         "vm_state": "active",
@@ -1716,7 +1716,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2023-11-26T10:43:30Z",
+        "updated_at": "2024-08-08T00:12:11Z",
         "user_data": null,
         "user_id": "0e6ca7c9f6fde5445a14807c925a22c13e8c01047b36353047198b1b4c74e282",
         "vm_state": "active",
@@ -1909,7 +1909,7 @@
         "task_state": null,
         "terminated_at": null,
         "trusted_image_certificates": null,
-        "updated_at": "2023-11-26T21:49:28Z",
+        "updated_at": "2024-08-08T00:12:11Z",
         "user_data": null,
         "user_id": "16c7a604498a2f8762b30edac10798841dc948aed3ef37a8ca76d06a56e39865",
         "vm_state": "active",

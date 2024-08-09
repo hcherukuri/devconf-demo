@@ -1,10 +1,12 @@
 - name: Create vm's
+  connection: local
   hosts: localhost
   gather_facts: false
   tasks:
-    # - name: Create resources on openstack.
-    #   ansible.builtin.include_role:
-    #     name: "openstack"
+    - name: Create resources on openstack.
+      ansible.builtin.include_role:
+        name: "openstack"
+
     - name: Create resources on kubevirt.
       ansible.builtin.include_role:
         name: "kubevirt"

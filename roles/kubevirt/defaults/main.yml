@@ -1,5 +1,5 @@
 ---
 vm: 
-  - name: wildfly-demo-2
-  - name: wildfly-demo-3
+  - name: eap-demo-3
+  - name: eap-demo-4
 namespace: devconf-demo

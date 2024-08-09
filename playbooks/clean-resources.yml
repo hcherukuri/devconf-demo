@@ -9,3 +9,9 @@
         name: "openstack"
       vars:
         action: destroy
+
+    - name: Destroy resources on kubevirt.
+      ansible.builtin.include_role:
+        name: "kubevirt"
+      vars:
+        action: destroy
